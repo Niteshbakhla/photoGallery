@@ -31,7 +31,7 @@ export function Nav() {
                                     >
 
 
-                                                <Link to="/about" className={`flex  items-center text-[20px] transition-all
+                                                <Link to="/about" className={`flex  items-center text-[20px] hover:bg-black hover:text-white px-4 py-1 lg:rounded-full rounded-sm   transition-all 
                                                 hover ${location.pathname === "/about" && "bg-black text-white"}`}>
                                                             About
                                                 </Link>
@@ -43,7 +43,7 @@ export function Nav() {
                                                 className="  font-medium"
                                     >
 
-                                                <Link to="/contact" className={`flex items-center text-[20px] transition-all hover ${location.pathname === "/contact" && "bg-black text-white"}`}>
+                                                <Link to="/contact" className={`flex items-center text-[20px] transition-all  hover:bg-black hover:text-white px-4 py-1 lg:rounded-full md:rounded-full rounded-sm  ${location.pathname === "/contact" && "bg-black text-white"}`}>
                                                             Contact
                                                 </Link>
                                     </Typography>
@@ -54,7 +54,7 @@ export function Nav() {
                                                 className="  font-medium hover"
                                     >
 
-                                                <Link to="/login" className={`flex items-center text-[20px] transition-all hover ${location.pathname === "/login" && "bg-black text-white"}`}>
+                                                <Link to="/login" className={`flex items-center text-[20px] hover:bg-black hover:text-white px-4 py-1 lg:rounded-full md:rounded-full rounded-sm  transition-all  ${location.pathname === "/login" && "bg-black text-white"}`}>
                                                             Login
                                                 </Link>
                                     </Typography>
@@ -65,7 +65,7 @@ export function Nav() {
                                                 className="font-medium"
                                     >
 
-                                                <Link to="/signup" className={`flex items-center transition-all  text-[20px] hover ${location.pathname === "/signup" && "bg-black text-white"}`}>
+                                                <Link to="/signup" className={`flex items-center  transition-all  text-[20px]  hover:bg-black hover:text-white px-4 py-1 lg:rounded-full md:rounded-full rounded-sm ${location.pathname === "/signup" && "bg-black text-white"}`}>
                                                             Signup
                                                 </Link>
                                     </Typography>
@@ -185,9 +185,7 @@ export function Nav() {
                                                                                                 </svg>
                                                                                     </div>
                                                                         </div>
-                                                                        <Button size="md" className="mt-1 rounded-lg sm:mt-0">
-                                                                                    Search
-                                                                        </Button>
+
                                                             </div>
                                                 </div>
                                     </Collapse>
